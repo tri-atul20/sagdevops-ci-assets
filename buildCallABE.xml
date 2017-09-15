@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <project name="Build" default="buildWM" basedir=".">
         
-        <property name="abeHome" value="${SAGHome}/common/AssetBuildEnvironment"/>
+        <property name="abeHome" value="${SAG_Home}/common/AssetBuildEnvironment"/>
         
         <property name="abeBuildfileDir" value="master_build"/>
 

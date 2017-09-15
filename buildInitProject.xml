@@ -2,8 +2,8 @@
 <project name="ProjectInitializer" default="" basedir="." >
 	
 	<!-- system properties properties -->
-	<target name="initSAGHome" unless="SAGHome">
-		<fail message="System property 'SAGHome' should be defined!"/>
+	<target name="initSAG_Home" unless="SAG_Home">
+		<fail message="System property 'SAG_Home' should be defined!"/>
 	</target>
 
 	<target name="initDeployerInstallationPath" unless="deployerInstallationPath">
@@ -80,7 +80,7 @@
 
 	
 	<!--Main Init targets-->
-	<target name="initSystemProperties" depends="initSAGHome,initDeployerInstallationPath,initDeployerHost,initDeployerPort,initDeployerUsername,initDeployerPassword">
+	<target name="initSystemProperties" depends="initSAG_Home,initDeployerInstallationPath,initDeployerHost,initDeployerPort,initDeployerUsername,initDeployerPassword">
 	</target>
 	
 	<target name="initMandatoryProperties" depends="initProjcetName,initBuildOutputDir,initRepositoryName,initDeployerProjectDefinition">
